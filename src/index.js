@@ -23,6 +23,9 @@ class ReactImageLightboxRotate extends Component {
 
     componentDidMount() {
         styles._insertCss();
+        if(this.props.defaultRotate){
+        this.setState({rotate:this.props.defaultRotate})
+        }
     }
 
 
