@@ -634,7 +634,7 @@
                 key: "handleMoveNext",
                 value: function() {
                     var _this3 = this;
-                    return this.props.onPreMoveNextRequest && this.state.rotate > 0 || this.state.nextRotate > 0 ? function() {
+                    return this.props.onPreMoveNextRequest && (this.state.rotate > 0 || this.state.nextRotate > 0) ? function() {
                         _this3.state.nextRotate > 0 ? (_this3.preservationRotation(_this3.state.nextRotate), 
                         _this3.resetNextRotation(0)) : (_this3.props.saveBeforeAfterState && _this3.preservationPrevRotation(_this3.state.rotate), 
                         _this3.resetRotation(0), (0, _override.changeAngle)(0)), _this3.props.onPreMoveNextRequest();
